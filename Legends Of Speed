@@ -758,7 +758,7 @@ do
 
         local MinSize = library.IsMobile and Vector2.new(220, 220) or Vector2.new(420, 220)
 		local UISize = library.IsMobile and UDim2.new(0, math.max((ScreenGui.AbsoluteSize.X + 1) / 3.4, MinSize.X), 0, math.max(ScreenGui.AbsoluteSize.Y / 2.8, MinSize.Y)) or UDim2.new(0, math.max((ScreenGui.AbsoluteSize.X + 1) / 2.8, MinSize.X), 0, math.max(ScreenGui.AbsoluteSize.Y / 2.8, MinSize.Y))
-local UISize = library.IsMobile and UDim2.new(30, math.max((ScreenGui.AbsoluteSize.X + 623) / 745, MinSize.X), 2, math.max(ScreenGui.AbsoluteSize.Y / 12.8, MinSize.Y)) or UDim2.new(0, math.max((ScreenGui.AbsoluteSize.X + 0) / 3.2, MinSize.X), 0, math.max(ScreenGui.AbsoluteSize.Y / 3, MinSize.Y))
+local UISize = library.IsMobile and UDim2.new(30, math.max((ScreenGui.AbsoluteSize.X + 623) / 745, MinSize.X), 2, math.max(ScreenGui.AbsoluteSize.Y / 12.8, MinSize.Y)) or UDim2.new(0, math.max((ScreenGui.AbsoluteSize.X + 0) / 3.4, MinSize.X), 0, math.max(ScreenGui.AbsoluteSize.Y / 3.1, MinSize.Y))
 
 		local show_icon = Create('ImageButton', {
 			Name = 'show_icon',
