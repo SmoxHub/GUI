@@ -1,4 +1,3 @@
------------------ ▼ GUI ▼ -----------------
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 local input = game:GetService("UserInputService")
@@ -8,18 +7,21 @@ local tweeninfo = TweenInfo.new
 local utility = {}
 local objects = {}
 local themes = {
-	Background = Color3.fromRGB(138, 0, 255),
-	Glow = Color3.fromRGB(138, 0, 255), 
-	Accent = Color3.fromRGB(138, 0, 255),
-	LightContrast = Color3.fromRGB(138, 0, 255), 
-	DarkContrast = Color3.fromRGB(138, 0, 255),
-	TextColor = Color3.fromRGB(138, 0, 255)
+	Background = Color3.fromRGB(24, 24, 24), 
+	Glow = Color3.fromRGB(255, 255, 255), 
+
+	Accent = Color3.fromRGB(10, 10, 10), 
+	LightContrast = Color3.fromRGB(20, 20, 20), 
+	DarkContrast = Color3.fromRGB(14, 14, 14),  
+	TextColor = Color3.fromRGB(255, 255, 255)
 }
 do
-function utility:Create(instance, properties, children)
+	function utility:Create(instance, properties, children)
 		local object = Instance.new(instance)
+		
 		for i, v in pairs(properties or {}) do
 			object[i] = v
+			
 			if typeof(v) == "Color3" then -- save for theme changer later
 				local theme = utility:Find(themes, v)
 				
@@ -31,6 +33,7 @@ function utility:Create(instance, properties, children)
 				end
 			end
 		end
+		
 		for i, module in pairs(children or {}) do
 			module.Parent = object
 		end
@@ -2157,4 +2160,5 @@ do
 		end
 	end
 end
+
 return library
