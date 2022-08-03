@@ -6,8 +6,8 @@ local CG = game:GetService("CoreGui")
 
 -- Variables
 
-local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/UI.lua"))()
-local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmoxHub/GUI/main/Discord-UI.lua"))()
+local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/SmoxHub/GUI/main/Discord-Functions.lua"))()
 
 local Inviter = { Connections = {} }
 
